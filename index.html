@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <title>Signature elec</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="module/lib/SigCaptX/wgssSigCaptX.js"></script>
+    <script src="module/lib/SigCaptX/base64.js"></script>
+    <script src="module/lib/SigCaptX/SigCaptX-Utils.js"></script>
+    <script src="module/lib/SigCaptX/SigCaptX-SessionControl.js"></script>
+    <script src="module/lib/SigCaptX/SigCaptX-Globals.js"></script>
+    <script src="module/lib/PDFlib.js"></script>
+
+
+    <body onload="wizardEventController.body_onload()">
+
+        <input type="file" id="files" name="file" accept="application/pdf" onchange="OnChangeFile(event)" />
+
+        <div style="width:100%">
+            <div id="imageBox" class="boxed" style="height:35mm; width:60mm; border:1px solid #d3d3d3;">
+            </div>
+        </div>
+    </body>
+
+    <script type="module" src="js/script.js"></script>
+
+</html>
