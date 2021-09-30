@@ -1,4 +1,4 @@
-import * as ElecSign from '../module/ElecSign';
+import {capture as Capture} from '../module/ElecSign';
 
 var bytePdfBase = null;
 
@@ -8,7 +8,7 @@ function OnChangeFile(event) {
     reader.onload = function(e) {
         bytePdfBase = e.target.result;
         //console.log(bytePdfBase);
-        ElecSign.capture();
+        Capture();
     };
 
     reader.readAsArrayBuffer(file);
